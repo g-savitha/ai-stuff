@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Like You Talk"
+  short_description: "Natural, conversational technical writing"
+  default_prompt: "Use $write-like-you-talk to rewrite this draft in a natural, conversational voice."
