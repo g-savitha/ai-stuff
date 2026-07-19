@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sol Prompt Generator"
+  short_description: "Generate and refine GPT-5.6 prompts"
+  default_prompt: "Use $sol-prompt-generator to design or revise a GPT-5.6 prompt for this task."
