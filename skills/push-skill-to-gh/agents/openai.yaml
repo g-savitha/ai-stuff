@@ -1,0 +1,4 @@
+interface:
+  display_name: "Push Skill to GitHub"
+  short_description: "Safely push skills to the GitHub repo"
+  default_prompt: "Use $push-skill-to-gh to inspect and push this skill to the configured GitHub repository."
