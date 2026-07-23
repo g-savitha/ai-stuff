@@ -1,0 +1,4 @@
+interface:
+  display_name: "Social Media Image Generator"
+  short_description: "Create educational technical comic infographics"
+  default_prompt: "Use $social-media-image-generator to turn a technical topic into a clear social-media comic infographic."
