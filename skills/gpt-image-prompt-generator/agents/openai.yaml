@@ -1,0 +1,4 @@
+interface:
+  display_name: "GPT Image Prompt Generator"
+  short_description: "Build precise GPT image prompts"
+  default_prompt: "Create a production-ready GPT image prompt from my brief, including composition, subject details, text, constraints, model settings, and an iteration plan."
