@@ -1,0 +1,31 @@
+---
+description: How to fix recurring agent mistakes: prefer code and static checks over prose rules (inverse pyramid)
+alwaysApply: true
+---
+
+# Fixing agent mistakes: the inverse pyramid
+
+Source: @poteto (https://x.com/poteto/status/2111133080526495985)
+
+Whenever an agent's work needs correcting, fix it at the highest layer that can handle it.
+Put most of the effort at the top and the least at the bottom:
+
+1. **Codebase (most effort).** Fix the problem in the code itself: better architecture,
+   stronger types and invariants, clear module boundaries. Agents copy what already
+   exists and take the shortest path, so make the easy thing the right thing. Remove
+   whole classes of bugs in code so nobody has to think about them again.
+2. **Static analysis.** Lint rules, type checks, tests, CI, and formal verification
+   where it's worth it. These are cheap, deterministic ways to catch problems before
+   they land.
+3. **Prose (use sparingly).** Comments, Cursor rules, AGENTS.md, skills. Only for things
+   that can't be enforced in code and genuinely need judgment. Keep them short.
+4. **Human review (least effort).** The hardest layer to scale. Spend it on the
+   highest-leverage points: designing an environment where agents do the right thing by
+   default, rather than reviewing every line.
+
+## When you hit a mistake
+- First ask: can a type, a refactor, or a clearer boundary make this mistake impossible?
+- If not, can a lint rule, test, or CI check catch it automatically?
+- Only then add a short written rule, and say why it exists.
+- If you notice the same correction twice, propose moving it up a layer.
+- Before calling work done, prove it works (run the tests, the type check, or the app).
