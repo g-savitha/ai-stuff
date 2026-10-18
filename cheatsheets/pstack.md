@@ -63,5 +63,8 @@ Start a feature carefully:
 - Rerun `/setup-pstack` with a smaller budget or cheaper models, or set roles to `auto`.
 - Save `/poteto-mode` for work that needs rigor. Use `/how` or `/teach` for quick questions.
 
+## Verification-first rule
+The always-on rule [`rules/cursor/verification-first.mdc`](../rules/cursor/verification-first.mdc) makes the agent run the project's verification skill and show evidence before saying it's done. If a project has none, it proposes `/create-verification-skill` plus a feature map.
+
 ## Remember
 These tools catch the repeat mistakes earlier. They don't replace your own review of every PR at work.

@@ -1,0 +1,20 @@
+---
+description: Prove work with the project's verification skill before calling it done; propose one if missing
+alwaysApply: true
+---
+
+# Verification first
+
+Before saying any work is done:
+
+1. **Find the project's verification skill.** Look in `.cursor/skills/`, `AGENTS.md`, or the README for a local verify skill or command.
+2. **Run it, and show the evidence.** Paste the real command output, test results, and screenshots. A green build alone doesn't count, and neither does "should work".
+3. **No verification skill?** Propose creating one with pstack's `/create-verification-skill`, plus a feature map: a short markdown file describing the app's layout, routes, and sections, with preferred selectors (ARIA roles and labels, `data-testid`) rather than class names. Ask before adding it.
+
+## How to check
+- If a check can be mechanical (a script, test, lint rule, type check, or CI step), make it mechanical. Write prose only for what needs judgment. See `agent-trust-pyramid.mdc`.
+- Keep PRs small and atomic: one change, one proof.
+- If a check fails, fix the cause or report it plainly. Never skip, weaken, or delete a check to get green.
+
+## Human review still applies
+These checks catch mistakes earlier. They never replace the human's own careful review of every change, and every PR still gets read by a person before it merges.
