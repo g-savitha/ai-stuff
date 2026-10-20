@@ -1,6 +1,6 @@
 ---
 name: write-like-you-talk
-description: Write or rewrite blog posts, LinkedIn posts, technical explanations, and work-related reflections in a natural, conversational style that sounds like a senior engineer talking to a peer, mentoring another engineer, or explaining technology to a curious friend.
+description: Write or rewrite blog posts, LinkedIn posts, technical explanations, and work-related reflections in two passes, a plain ASD-STE100 Simplified Technical English draft and then a natural, conversational rewrite that sounds like a senior engineer talking to a peer, mentoring another engineer, or explaining technology to a curious friend.
 ---
 
 # Write Like You Talk
@@ -14,6 +14,21 @@ Determine whether the user is speaking to:
 3. A friend who is curious about technology
 
 When the audience is unspecified and would materially change the writing, ask who the post is for. Otherwise, default to a senior engineer informally mentoring another engineer.
+
+## Write a plain draft first (ASD-STE100)
+
+Before adding any voice, write or rewrite the content in ASD-STE100 Simplified Technical English. This pass makes the ideas clear and correct. The next pass makes them sound human.
+
+- Keep sentences short: at most 20 words for instructions and 25 for descriptions, and usually fewer.
+- Put one idea in each sentence and one topic in each paragraph.
+- Use the active voice and name who or what does the action.
+- Use simple, common words, and use each word with one meaning only.
+- Use the same term for the same thing every time. Do not switch between synonyms.
+- Write instructions as commands, in the order the reader does them.
+- Keep the needed technical names, and explain each one the first time it appears.
+- Remove filler, hedging stacks, and words that add no meaning.
+
+Check the facts in this draft against the sources before you continue. Then rewrite it with the conversational voice below. Keep the STE clarity underneath: the final text can be relaxed, but it must stay short, plain, and exact.
 
 ## Use a conversational voice
 
@@ -93,6 +108,7 @@ Create curiosity without clickbait. End naturally instead of using a formal conc
 
 Check that:
 
+- The plain STE draft was written first and its clarity survived the rewrite.
 - The result sounds like something a real person would say.
 - The voice resembles an experienced engineer speaking to another person.
 - No sentence is unnecessarily formal or corporate.
